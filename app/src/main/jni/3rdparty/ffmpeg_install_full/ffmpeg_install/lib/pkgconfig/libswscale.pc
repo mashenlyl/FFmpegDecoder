@@ -1,0 +1,14 @@
+prefix=/home/jetson/Documents/ffmpeg-snapshot/ffmpeg/ffmpeg_install
+exec_prefix=${prefix}
+libdir=/home/jetson/Documents/ffmpeg-snapshot/ffmpeg/ffmpeg_install/lib
+includedir=/home/jetson/Documents/ffmpeg-snapshot/ffmpeg/ffmpeg_install/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.8.100
+Requires: libavutil >= 56.66.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}

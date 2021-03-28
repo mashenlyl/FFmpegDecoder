@@ -1,0 +1,14 @@
+prefix=/home/jetson/Documents/ffmpeg-snapshot/ffmpeg/ffmpeg_install
+exec_prefix=${prefix}
+libdir=/home/jetson/Documents/ffmpeg-snapshot/ffmpeg/ffmpeg_install/lib
+includedir=/home/jetson/Documents/ffmpeg-snapshot/ffmpeg/ffmpeg_install/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.125.101
+Requires: libswresample >= 3.8.100, libavutil >= 56.66.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm -lz
+Libs.private: 
+Cflags: -I${includedir}
